@@ -1,6 +1,4 @@
-/**
- * server.js
- * 
+/*
  * This file is the entry point for the Helpful Stranger application. It sets up the Express server,
  * initializes session configuration, connects to the database, and defines routes.
  * 

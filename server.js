@@ -22,7 +22,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
+const routes = require('./controllers'); //Imports the controllers/index.js file
 const helpers = require('./utils/helpers');
 require('dotenv').config(); //because I am using env variables to hide the value of my secret, below.
 
@@ -66,7 +66,7 @@ app.use(express.urlencoded({ extended: true }));
 // Serve up static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Use defined routes
+// Use defined, aggregated routes, a reference to the main entry point for routes which is the index.js file in the controllers folder, which, in turn, includes the routes defined in the controllers/api files and controllers folder
 app.use(routes);
 
 // Sync Sequelize and start the server

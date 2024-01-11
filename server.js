@@ -1,6 +1,6 @@
 /*
  * This file is the entry point for the Helpful Stranger application. It sets up the Express server,
- * initializes session configuration, connects to the database, and defines routes.
+ * initializes session configuration, integrates Passport.js for user authentication, connects to the database, and defines routes.
  * 
  * Dependencies:
  * - express: Web application framework
@@ -8,6 +8,8 @@
  * - express-handlebars: Handlebars view engine for Express
  * - connect-session-sequelize: Session store for Sequelize
  * - sequelize: SQL ORM for Node.js
+ * - passport: Authentication middleware for Node.js 
+ * - passport-local: Passport.js strategy for authenticating with a username and password
  * - path: Node.js module for handling file paths
  * - helpers: Custom helper functions for Handlebars
  * - routes: Application routes defined in the controllers folder
@@ -20,6 +22,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const passport = require('./config/passport'); //Passport, passport-local and expression-session work together for user authentication. 
+const LocalStrategy = require('passport-local').Strategy;
 const routes = require('./controllers'); //Imports the controllers/index.js file
 const helpers = require('./utils/helpers');
 require('dotenv').config(); //because I am using env variables to hide the value of my secret, below.
@@ -51,7 +55,39 @@ const sess = {
   }),
 };
 
+// Passport.js configuration
+passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, password, done) => {
+  try {
+    const user = await User.findOne({ where: { email: email } });
+
+    if (!user || !user.validPassword(password)) {
+      return done(null, false, { message: 'Incorrect email or password.' });
+    }
+
+    return done(null, user);
+  } catch (err) {
+    return done(err);
+  }
+}));
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await User.findByPk(id);
+    done(null, user);
+  } catch (err) {
+    done(err);
+  }
+});
+
+// Set up and use Express session middleware with the provided session configuration 'sess', Initialize passport.js (used for authentication). Use Passport.js session middleware to persist login sessions across requests
 app.use(session(sess));
+app.use(passport.initialize());
+app.use(passport.session());
+require('./config/passport')(passport);
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);

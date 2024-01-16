@@ -1,0 +1,147 @@
+[
+    {
+      "service_id": 1,
+      "title": "24hr Dog-Sitting (1 Dog) with walk",
+      "description": "Includes at least one 20-minute walk and x2 pet relief outings.",
+      "price": 30
+    },
+    {
+      "service_id": 2,
+      "title": "24hr Dog-Sitting (2 Dogs) with walk",
+      "description": "Includes at least one 20-minute walk and x2 pet relief outings.",
+      "price": 45
+    },
+    {
+      "service_id": 3,
+      "title": "24hr Dog-Sitting (1 Dog) no walk",
+      "description": "Includes x3 pet relief outings (minimum).",
+      "price": 20
+    },
+    {
+      "service_id": 4,
+      "title": "24hr Dog-Sitting (2 Dogs) no walk",
+      "description": "Includes x3 pet relief outings (minimum).",
+      "price": 30
+    },
+    {
+      "service_id": 5,
+      "title": "24hr Cat-Sitting (1 Cat)",
+      "description": "Includes x1 litter maintenance (scooping).",
+      "price": 20
+    },
+    {
+      "service_id": 6,
+      "title": "24hr Cat-Sitting (2 Cats)",
+      "description": "Includes at least one litter maintenance (scooping)",
+      "price": 30
+    },
+    {
+      "service_id": 7,
+      "title": "Premium for Special Needs Pet",
+      "description": "Cat or dog. May include administering medication or serving a special diet, dealing with seizures or pre/post natal care (not for regular care such as nail clipping or tooth brushing)",
+      "price": 5
+    },
+    {
+      "service_id": 8,
+      "title": "Premium for Pet with Behavioral Issues",
+      "description": "Cat or dog. May include aggression, separation anxiety, soiling, clawing, chewing or excessive barking/yowling",
+      "price": 10
+    },
+    {
+      "service_id": 9,
+      "title": "Savings on Short-Term Sits (8 hours or less)",
+      "description": "The offering of this discount is at the discretion of the service provider. If offered it will be indicated by a badge and calculated automatically",
+      "price": -5
+    },
+    {
+      "service_id": 10,
+      "title": "Savings on Dog+Cat",
+      "description": "Second animal discount.  Not as much of a discount as for 2 dogs or 2 cats, because a dog and a cat still involves two different kinds of work, but a bit of a break for owners who have to board 2 animals",
+      "price": -5
+    },
+    {
+      "service_id": 11,
+      "title": "Savings for Long-Term Dog-Sits (7 days or longer)",
+      "description": "The offering of this discount is at the discretion of the service provider. If offered it will be indicated by a badge and calculated automatically",
+      "price": -20
+    },
+    {
+      "service_id": 12,
+      "title": "Premium for Long-Term Cat-Sits (7 days or longer)",
+      "description": "Premium because a week's stay will require a complete litter box refresh (wash tray, change litter) vs. daily maintenance by scooping",
+      "price": 10
+    },
+    {
+      "service_id": 13,
+      "title": "Overage on pet-sitting services (charged per hour)",
+      "description": "If owners exceed the 24 hour period and are late picking up their pets, additional hours will be charged at 5 points per hour",
+      "price": 5
+    },
+    {
+      "service_id": 14,
+      "title": "In-Home Assistance (up to 1hr)",
+      "description": "Odd jobs list. Not for personal care, snow shoveling, yard maintenance, regular housecleaning, or lifting over 30lbs. Tasks must be clearly described and agreed between the provider and receiver of the service before transaction is finalized. The hour starts when the helper appears at the door. It may conclude earlier than 1 hour if the task(s) are accomplished. Common and appropriate tasks might be things like changing a lightbulb or battery, loosening bottle tops, following simple but small print instructions to set up a new household appliance or install a fixture, harvesting crabapples from a backyard tree, climbing a step stool to get a box from a high cupboard, cleaning a small, hard-to-reach section of window, taking recycling to the depot.  In the case of work (like the last example) which requires the helper to leave the home, they are still on the clock while accomplishing the task and this should be factored in.",
+      "price": 30
+    },
+    {
+      "service_id": 15,
+      "title": "Transportation to or from Medical Appointments or other destination (up to 1hr)",
+      "description": "The hour starts when the helper appears at the door and if a two way journey is being completed within the hour, includes journey time back to the home of the person receiving the service. This option covers pick up/drop off 'at the front door' only. See the premium for inside accompaniment. There is also a premium for longer appointments where the travel to, appointment time and travel from won't fit within 1 hour, but would fit within 3 hours. These premiums are offered at the discretion of the service-provider and a badge on their profile will indicate whether they provide them. The most common use of this service is for medical appointments, but it can also be convenient for airport drop offs and drop offs to other destinations. If the service is being used for a pick-up after a medical procedure, this must be disclosed to the service-provider and agreed before finalizing the transaction. Any parking fees are the responsibility of the person receiving the service.",
+      "price": 30   
+    },
+    {
+      "service_id": 16,
+      "title": "Grocery Pick Up and Delivery (pre-placed order)",
+      "description": "The person receiving the service does their own grocery shopping online. The service-provider picks up the order at the store and delivers it to the service-recipient's door. Typically this service takes less than an hour, though it can vary depending on wait-times at the store and distance from the store to the service-recipient's home",
+      "price": 20
+    },
+    {
+      "service_id": 17,
+      "title": "Shopping and Delivery (up to 1hr)",
+      "description": "The hour starts when the service-provider appears at the door and ends when shopping is dropped off at the door. The service-provider usually executes the shopping from a list either in store or online, but if the service-recipient wishes and the service-provider agrees, the two may shop together in-store or online provided the entire outing is kept within the hour",
+      "price": 30
+    },
+    {
+      "service_id": 18,
+      "title": "Tutorials/Troubleshooting of Technology (up to 1hr)",
+      "description": "Technology can be a learning-curve for seniors, but mastering it can make life a lot easier and more enjoyable. Whether the service-recipient wants to be set up with a social media account, taught how to use accessability features to hear text on screens read aloud, connect their hearing aids to their smart tv, place orders with amazon or with the local grocery store online, or be led through the technology that exists for doing online banking or exploring features like interac etransfer, this is a great area where 'technology natives' (people under 40) can help those who were born in the pre-digital age. The hour starts when the helper appears at the door",
+      "price": 30
+    },
+    {
+      "service_id": 19,
+      "title": "Accompaniment to Events (1st hour)",
+      "description": "Sometimes a senior would like to attend events in the community (eg. ice sculpture display hosted by the city, expedition to see a special exhibit at a museum or art gallery, cultural or religious celebration) but not go on their own. This service is designed for social/recreational outings rather than those that are strictly necessary, like medical appointments and entails an expectation of friendly conversation. The nature of the outing should be discussed and agreed in full before the transaction is finalized. Any fees associated with the activity are to be covered by the service-recipient for both parties.",
+      "price": 40
+    },
+    {
+      "service_id": 20,
+      "title": "Accompaniment to Events (per hour after 1st hour)",
+      "description": "Many events (eg. plays, movies, comedy shows) run for more than an hour, though many can be completed within the hour (eg. viewing the Christmas lights in a particular section of town). If the activity expends beyond 1 hour, additional hours are charged at a slightly higher rate on the premise that it is more difficult for the service- provider to commit 2 unbroken hours to an activity than it is to find just one hour.",  
+      "price": 60
+    },
+    {
+      "service_id": 21,
+      "title": "Communication/Form Filling (by phone, email, or letter)",
+      "description": "A greeting needs to be sent but decline in manual dexterity makes typing an email a chore, and handwriting shaky. The phone company has written speaking of an account irregularity, a matter that needs following up in order to be resolved. A new passport is needed but even the 'short form' seems complicated and long. There are a whack of phone messages which need sorting out into the categories of a. scam b. marketing and c. needs response. These secretarial/administrative type tasks are an area where a helper can be beneficial. Helpers should not be given access to sensitive information such as bank account numbers, credit card numbers, PINs, financial balances for the protection and comfort of both parties.",  
+      "price": 20
+    },
+    {
+      "service_id": 22,
+      "title": "Premium for Pick Up and Drop Off (within 3-hour span)",
+      "description": "An hour door to door really leaves time for no more than a 30 min appointment if transportation both before and after is needed under a single service. Some appointments can be fit within this time-frame, but longer appointments can be accommodated by the driver agreeing to drop the service-recipient off, go away and come back within a maximum span of 3 hours. The amount of time spent doing the drop-off and pick up is the same for the service-provider, but they bear the added responsibility of knowing the task is not completed across the full 3 hours, not just one hour -- hence this service is offered at a premium. Offering drop off and pick up within a 3 hour span is at the service-provider's discretion and is indicated by a badge on the user-profile. The 'within three hours' option is offered only with the basic 'at the door' drop off and pick up, not with the 'inside accompaniment' option",  
+      "price": 15
+    },
+    {
+      "service_id": 23,
+      "title": "Premium for inside accompaniment vs. outside Drop Off",
+      "description": "Standard transportation service to medical appointments and other destination assumes drop off and pick up at the entrance.  But if the patient waives privacy concerns and the service-provider agrees, service can be extended to accompaniment inside as registration can sometimes be challenging (filling of forms) and those with hearing or memory loss may benefit from having someone else in the appointment to recall what was said. In terms of airport drop offs it would mean accompaniment inside the terminal so that the service-recipient is handed off to the airline's 'assistance requested' desk, or brought to the appropriate check in counter or security port for their flight. If parking is required it is the responsibility of the service-recipient to pay for it. Inside accompaniment or outside drop off, this service must still be completed within 1 hr",
+      "price": 15
+    },
+    {
+      "service_id": 24,
+      "title": "Overage on Daily-Living services (charged per 20min)",
+      "description": "If the service runs over the hour the service-recipient is charged 30 credits for each additional 20 minutes",
+      "price": 30
+    }
+  ]
+   
